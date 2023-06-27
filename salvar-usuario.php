@@ -4,7 +4,7 @@
 
         case 'cadastrar';
             $nome = filter_input(INPUT_POST, 'name');
-            $email = filter_input(INPUT_POST, 'email' FILTER_VALIDATE_EMAIL);
+            $email = filter_input(INPUT_POST, 'email');
             $senha = filter_input(INPUT_POST, 'senha');
             $data_nasc = filter_input(INPUT_POST, 'data_nasc');
 
@@ -15,8 +15,8 @@
             exit;
 
 
-        
             break;
+        
 
         case 'editar';
         break;
